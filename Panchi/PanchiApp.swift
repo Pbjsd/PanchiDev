@@ -14,8 +14,7 @@ struct PanchiApp: App {
   
     var body: some Scene {
         WindowGroup {
-            ContentView()
-          //In the CWC - they have this as RootView() but if you put that then you will get an error since you don't have a root view made yet 
+            RootView()
         }
     }
 }
