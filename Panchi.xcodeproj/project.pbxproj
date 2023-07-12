@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A62BA772A22BED200D196AD /* OnboardingContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A62BA762A22BED200D196AD /* OnboardingContainerView.swift */; };
+		5A62BA792A22BF6000D196AD /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A62BA782A22BF6000D196AD /* WelcomeView.swift */; };
+		5A62BA7B2A22BF7400D196AD /* PhoneNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A62BA7A2A22BF7400D196AD /* PhoneNumberView.swift */; };
+		5A62BA7D2A22BF8100D196AD /* VerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A62BA7C2A22BF8100D196AD /* VerificationView.swift */; };
+		5A62BA7F2A22BF9000D196AD /* CreateProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A62BA7E2A22BF9000D196AD /* CreateProfileView.swift */; };
+		5ACDDCC22A4C982500415F04 /* CreateProfileTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACDDCC12A4C982500415F04 /* CreateProfileTextFieldStyle.swift */; };
 		5AE7AD262A1E746A00996824 /* PanchiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE7AD252A1E746A00996824 /* PanchiApp.swift */; };
 		5AE7AD282A1E746A00996824 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE7AD272A1E746A00996824 /* RootView.swift */; };
 		5AE7AD2A2A1E746B00996824 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AE7AD292A1E746B00996824 /* Assets.xcassets */; };
@@ -28,9 +34,16 @@
 		5AE7AD852A1FFAD900996824 /* LexendDeca-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5AE7AD7C2A1FFAD900996824 /* LexendDeca-Regular.ttf */; };
 		5AE7AD862A1FFAD900996824 /* LexendDeca-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5AE7AD7D2A1FFAD900996824 /* LexendDeca-Black.ttf */; };
 		5AE7AD892A1FFFED00996824 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE7AD882A1FFFED00996824 /* Fonts.swift */; };
+		5AE8AD082A33891100DE5D1B /* OnboardingButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE8AD072A33891100DE5D1B /* OnboardingButtonStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A62BA762A22BED200D196AD /* OnboardingContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerView.swift; sourceTree = "<group>"; };
+		5A62BA782A22BF6000D196AD /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		5A62BA7A2A22BF7400D196AD /* PhoneNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberView.swift; sourceTree = "<group>"; };
+		5A62BA7C2A22BF8100D196AD /* VerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationView.swift; sourceTree = "<group>"; };
+		5A62BA7E2A22BF9000D196AD /* CreateProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileView.swift; sourceTree = "<group>"; };
+		5ACDDCC12A4C982500415F04 /* CreateProfileTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileTextFieldStyle.swift; sourceTree = "<group>"; };
 		5AE7AD222A1E746A00996824 /* Panchi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Panchi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AE7AD252A1E746A00996824 /* PanchiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanchiApp.swift; sourceTree = "<group>"; };
 		5AE7AD272A1E746A00996824 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
@@ -51,6 +64,7 @@
 		5AE7AD7C2A1FFAD900996824 /* LexendDeca-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "LexendDeca-Regular.ttf"; path = "../../../../Downloads/Lexend_Deca/static/LexendDeca-Regular.ttf"; sourceTree = "<group>"; };
 		5AE7AD7D2A1FFAD900996824 /* LexendDeca-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "LexendDeca-Black.ttf"; path = "../../../../Downloads/Lexend_Deca/static/LexendDeca-Black.ttf"; sourceTree = "<group>"; };
 		5AE7AD882A1FFFED00996824 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		5AE8AD072A33891100DE5D1B /* OnboardingButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingButtonStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +82,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A62BA732A22BE7F00D196AD /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				5A62BA762A22BED200D196AD /* OnboardingContainerView.swift */,
+				5A62BA782A22BF6000D196AD /* WelcomeView.swift */,
+				5A62BA7A2A22BF7400D196AD /* PhoneNumberView.swift */,
+				5A62BA7C2A22BF8100D196AD /* VerificationView.swift */,
+				5A62BA7E2A22BF9000D196AD /* CreateProfileView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		5ACDDCC32A5EF85800415F04 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5A62BA732A22BE7F00D196AD /* Onboarding */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		5AE7AD192A1E746A00996824 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +121,7 @@
 		5AE7AD242A1E746A00996824 /* Panchi */ = {
 			isa = PBXGroup;
 			children = (
+				5ACDDCC32A5EF85800415F04 /* Views */,
 				5AE7AD672A1FDCE800996824 /* Info.plist */,
 				5AE7AD662A1FD37B00996824 /* Panchi.entitlements */,
 				5AE7AD252A1E746A00996824 /* PanchiApp.swift */,
@@ -138,6 +173,8 @@
 			isa = PBXGroup;
 			children = (
 				5AE7AD882A1FFFED00996824 /* Fonts.swift */,
+				5AE8AD072A33891100DE5D1B /* OnboardingButtonStyle.swift */,
+				5ACDDCC12A4C982500415F04 /* CreateProfileTextFieldStyle.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -235,7 +272,14 @@
 				5AE7AD892A1FFFED00996824 /* Fonts.swift in Sources */,
 				5AE7AD422A1E8E6C00996824 /* AppDelegate.swift in Sources */,
 				5AE7AD282A1E746A00996824 /* RootView.swift in Sources */,
+				5A62BA7F2A22BF9000D196AD /* CreateProfileView.swift in Sources */,
 				5AE7AD262A1E746A00996824 /* PanchiApp.swift in Sources */,
+				5A62BA772A22BED200D196AD /* OnboardingContainerView.swift in Sources */,
+				5AE8AD082A33891100DE5D1B /* OnboardingButtonStyle.swift in Sources */,
+				5A62BA7D2A22BF8100D196AD /* VerificationView.swift in Sources */,
+				5ACDDCC22A4C982500415F04 /* CreateProfileTextFieldStyle.swift in Sources */,
+				5A62BA7B2A22BF7400D196AD /* PhoneNumberView.swift in Sources */,
+				5A62BA792A22BF6000D196AD /* WelcomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
