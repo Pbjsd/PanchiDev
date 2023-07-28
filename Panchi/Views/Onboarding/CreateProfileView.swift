@@ -18,6 +18,12 @@ struct CreateProfileView: View {
   @State var firstName = ""
   @State var lastName = ""
 
+  @State var selectedImage: UIImage?
+  @State var isPickerShowing = false
+
+  @State var isSourceMenuShowing = false
+  @State var source: UIImagePickerController.SourceType = .photoLibrary
+
   var body: some View {
 
     VStack {
@@ -36,20 +42,29 @@ struct CreateProfileView: View {
       Button {
 
         // Show action sheet
+        isSourceMenuShowing = true
 
       } label: {
 
         ZStack {
 
-          Circle()
-            .foregroundColor(Color.white)
+          if selectedImage != nil {
+            Image(uiImage: selectedImage!)
+              .resizable()
+              .scaledToFill()
+              .clipShape(Circle())
+          }
+          else {
+            Circle()
+              .foregroundColor(Color.white)
+
+            Image(systemName: "camera.fill")
+              .tint(Color("icons-input"))
+          }
 
           Circle()
             .stroke(Color("create-profile-border"), lineWidth: 2)
-
-          Image(systemName: "camera.fill")
-            .tint(Color("icons-input"))
-
+          
         }
         .frame(width: 134, height: 134)
 
@@ -62,7 +77,7 @@ struct CreateProfileView: View {
         .textFieldStyle(CreateProfileTextfieldStyle())
 
       // Last name
-      TextField("Last Name", text: $firstName)
+      TextField("Last Name", text: $lastName)
         .textFieldStyle(CreateProfileTextfieldStyle())
 
       Spacer()
@@ -81,6 +96,36 @@ struct CreateProfileView: View {
 
     }
     .padding(.horizontal)
+    .confirmationDialog("From where?", isPresented: $isSourceMenuShowing, actions: {
+
+      Button {
+        // Set the source to photo library
+        self.source = .photoLibrary
+
+        // Show the image picker
+        isPickerShowing = true
+
+      } label: {
+        Text("Photo Library")
+      }
+
+      Button {
+        // Set the source to camera
+        self.source = .camera
+
+        // Show the image picker
+        isPickerShowing = true
+      } label: {
+        Text("Take Photo")
+      }
+
+
+    })
+    .sheet(isPresented: $isPickerShowing) {
+
+      // Show the image picker
+      ImagePicker(selectedImage: $selectedImage, isPickerShowing: $isPickerShowing, source: self.source)
+    }
 
   }
 }
