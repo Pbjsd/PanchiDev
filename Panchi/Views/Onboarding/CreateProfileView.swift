@@ -109,14 +109,17 @@ struct CreateProfileView: View {
         Text("Photo Library")
       }
 
-      Button {
-        // Set the source to camera
-        self.source = .camera
+      if UIImagePickerController.isSourceTypeAvailable(.camera) {
 
-        // Show the image picker
-        isPickerShowing = true
-      } label: {
-        Text("Take Photo")
+        Button {
+          // Set the source to camera
+          self.source = .camera
+
+          // Show the image picker
+          isPickerShowing = true
+        } label: {
+          Text("Take Photo")
+        }
       }
 
 
@@ -132,7 +135,7 @@ struct CreateProfileView: View {
 
 
 struct CreateProfileView_Previews: PreviewProvider {
-    static var previews: some View {
-      CreateProfileView(currentStep: .constant(.profile), isOnboarding: .constant(true))
-    }
+  static var previews: some View {
+    CreateProfileView(currentStep: .constant(.profile), isOnboarding: .constant(true))
+  }
 }
