@@ -9,11 +9,7 @@ import SwiftUI
 
 struct CreateProfileView: View {
 
-  //adding this here since this will be the last step of the onboading process and not SyncContactsView - orig this was supposed to be on the SyncContactsView but since we are not syncing contacts anymore, we are putting this here
-
   @Binding var currentStep: OnboardingStep
-
-  @Binding var isOnboarding: Bool
 
   @State var firstName = ""
   @State var lastName = ""
@@ -24,10 +20,11 @@ struct CreateProfileView: View {
   @State var isSourceMenuShowing = false
   @State var source: UIImagePickerController.SourceType = .photoLibrary
 
+  @State var isSaveButtonDisabled = false
+
   var body: some View {
 
     VStack {
-
       Text("Setup your Profile")
         .font(Font.titleText)
         .padding(.top, 52)
@@ -83,14 +80,29 @@ struct CreateProfileView: View {
       Spacer()
 
       Button {
-        //  End Onboarding (Formerly called Next step, we are ending onboarding here since not syncing contacts)
 
-        isOnboarding = false
+        // Prevent double taps
+        isSaveButtonDisabled = true
+
+        // Save the data - pg.230 from your notes. This is where user data gets saved into firestore database
+        DatabaseService().setUserProfile(firstName: firstName,
+                                         lastName: lastName,
+                                         image: selectedImage) { isSuccess in
+          if isSuccess {
+            currentStep = .profilecomplete
+          }
+          else {
+            // TODO: Show error message to the user
+          }
+
+          isSaveButtonDisabled = false
+        }
 
       } label: {
-        Text("Continue")
+        Text(isSaveButtonDisabled ? "Uploading" : "Save")
       }
       .buttonStyle(OnboardingButtonStyle())
+      .disabled(isSaveButtonDisabled)
       .padding(.bottom, 87)
 
 
@@ -129,13 +141,14 @@ struct CreateProfileView: View {
       // Show the image picker
       ImagePicker(selectedImage: $selectedImage, isPickerShowing: $isPickerShowing, source: self.source)
     }
-
+    
   }
+  
 }
 
 
 struct CreateProfileView_Previews: PreviewProvider {
   static var previews: some View {
-    CreateProfileView(currentStep: .constant(.profile), isOnboarding: .constant(true))
+    CreateProfileView(currentStep: .constant(.profile))
   }
 }

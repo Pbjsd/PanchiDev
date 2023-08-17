@@ -12,6 +12,7 @@
 		5A62BA7B2A22BF7400D196AD /* PhoneNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A62BA7A2A22BF7400D196AD /* PhoneNumberView.swift */; };
 		5A62BA7D2A22BF8100D196AD /* VerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A62BA7C2A22BF8100D196AD /* VerificationView.swift */; };
 		5A62BA7F2A22BF9000D196AD /* CreateProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A62BA7E2A22BF9000D196AD /* CreateProfileView.swift */; };
+		5A6708522A8E9E18001337F6 /* ProfileCompletionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6708512A8E9E18001337F6 /* ProfileCompletionView.swift */; };
 		5ACDDCC22A4C982500415F04 /* CreateProfileTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACDDCC12A4C982500415F04 /* CreateProfileTextFieldStyle.swift */; };
 		5ACDDCC72A5EFE9700415F04 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACDDCC62A5EFE9700415F04 /* User.swift */; };
 		5ACDDCCA2A5F2A2000415F04 /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACDDCC92A5F2A2000415F04 /* DatabaseService.swift */; };
@@ -47,6 +48,7 @@
 		5A62BA7A2A22BF7400D196AD /* PhoneNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberView.swift; sourceTree = "<group>"; };
 		5A62BA7C2A22BF8100D196AD /* VerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationView.swift; sourceTree = "<group>"; };
 		5A62BA7E2A22BF9000D196AD /* CreateProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileView.swift; sourceTree = "<group>"; };
+		5A6708512A8E9E18001337F6 /* ProfileCompletionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCompletionView.swift; sourceTree = "<group>"; };
 		5ACDDCC12A4C982500415F04 /* CreateProfileTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileTextFieldStyle.swift; sourceTree = "<group>"; };
 		5ACDDCC62A5EFE9700415F04 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		5ACDDCC92A5F2A2000415F04 /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				5A62BA7C2A22BF8100D196AD /* VerificationView.swift */,
 				5A62BA7E2A22BF9000D196AD /* CreateProfileView.swift */,
 				5ACDDCEA2A743B7000415F04 /* ImagePicker.swift */,
+				5A6708512A8E9E18001337F6 /* ProfileCompletionView.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 				5ACDDCCA2A5F2A2000415F04 /* DatabaseService.swift in Sources */,
 				5AE8AD082A33891100DE5D1B /* OnboardingButtonStyle.swift in Sources */,
 				5A62BA7D2A22BF8100D196AD /* VerificationView.swift in Sources */,
+				5A6708522A8E9E18001337F6 /* ProfileCompletionView.swift in Sources */,
 				5ACDDCC22A4C982500415F04 /* CreateProfileTextFieldStyle.swift in Sources */,
 				5ACDDCEB2A743B7000415F04 /* ImagePicker.swift in Sources */,
 				5A62BA7B2A22BF7400D196AD /* PhoneNumberView.swift in Sources */,

@@ -13,6 +13,7 @@ enum OnboardingStep: Int {
     case phonenumber = 1
     case verification = 2
     case profile = 3
+    case profilecomplete = 4
 }
 
 struct OnboardingContainerView: View {
@@ -40,8 +41,10 @@ struct OnboardingContainerView: View {
               VerificationView(currentStep: $currentStep)
 
             case .profile:
-              CreateProfileView(currentStep: $currentStep, isOnboarding: $isOnboarding)
+              CreateProfileView(currentStep: $currentStep)
 
+            case .profilecomplete:
+              ProfileCompletionView(isOnboarding: $isOnboarding)
             }
 
         }
