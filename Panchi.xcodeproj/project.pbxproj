@@ -13,6 +13,9 @@
 		5A62BA7D2A22BF8100D196AD /* VerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A62BA7C2A22BF8100D196AD /* VerificationView.swift */; };
 		5A62BA7F2A22BF9000D196AD /* CreateProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A62BA7E2A22BF9000D196AD /* CreateProfileView.swift */; };
 		5A6708522A8E9E18001337F6 /* ProfileCompletionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6708512A8E9E18001337F6 /* ProfileCompletionView.swift */; };
+		5A73C7412AA2302D0046B9CF /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A73C7402AA2302D0046B9CF /* ChatView.swift */; };
+		5A73C7432AA230400046B9CF /* NewUsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A73C7422AA230400046B9CF /* NewUsersView.swift */; };
+		5A73C7452AA2304C0046B9CF /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A73C7442AA2304C0046B9CF /* ProfileView.swift */; };
 		5ACDDCC22A4C982500415F04 /* CreateProfileTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACDDCC12A4C982500415F04 /* CreateProfileTextFieldStyle.swift */; };
 		5ACDDCC72A5EFE9700415F04 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACDDCC62A5EFE9700415F04 /* User.swift */; };
 		5ACDDCCA2A5F2A2000415F04 /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACDDCC92A5F2A2000415F04 /* DatabaseService.swift */; };
@@ -49,6 +52,9 @@
 		5A62BA7C2A22BF8100D196AD /* VerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationView.swift; sourceTree = "<group>"; };
 		5A62BA7E2A22BF9000D196AD /* CreateProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileView.swift; sourceTree = "<group>"; };
 		5A6708512A8E9E18001337F6 /* ProfileCompletionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCompletionView.swift; sourceTree = "<group>"; };
+		5A73C7402AA2302D0046B9CF /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		5A73C7422AA230400046B9CF /* NewUsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUsersView.swift; sourceTree = "<group>"; };
+		5A73C7442AA2304C0046B9CF /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		5ACDDCC12A4C982500415F04 /* CreateProfileTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileTextFieldStyle.swift; sourceTree = "<group>"; };
 		5ACDDCC62A5EFE9700415F04 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		5ACDDCC92A5F2A2000415F04 /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
@@ -156,6 +162,9 @@
 				5AE7AD252A1E746A00996824 /* PanchiApp.swift */,
 				5AE7AD412A1E8E6C00996824 /* AppDelegate.swift */,
 				5AE7AD272A1E746A00996824 /* RootView.swift */,
+				5A73C7402AA2302D0046B9CF /* ChatView.swift */,
+				5A73C7422AA230400046B9CF /* NewUsersView.swift */,
+				5A73C7442AA2304C0046B9CF /* ProfileView.swift */,
 				5ACDDCC32A5EF85800415F04 /* Views */,
 				5AE7AD6A2A1FF7AD00996824 /* ViewModels */,
 				5AE7AD872A1FFF6A00996824 /* Helpers */,
@@ -299,6 +308,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A73C7432AA230400046B9CF /* NewUsersView.swift in Sources */,
+				5A73C7412AA2302D0046B9CF /* ChatView.swift in Sources */,
 				5ACDDCC72A5EFE9700415F04 /* User.swift in Sources */,
 				5AE7AD692A1FF75C00996824 /* AuthViewModel.swift in Sources */,
 				5AE7AD892A1FFFED00996824 /* Fonts.swift in Sources */,
@@ -315,6 +326,7 @@
 				5ACDDCC22A4C982500415F04 /* CreateProfileTextFieldStyle.swift in Sources */,
 				5ACDDCEB2A743B7000415F04 /* ImagePicker.swift in Sources */,
 				5A62BA7B2A22BF7400D196AD /* PhoneNumberView.swift in Sources */,
+				5A73C7452AA2304C0046B9CF /* ProfileView.swift in Sources */,
 				5A62BA792A22BF6000D196AD /* WelcomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

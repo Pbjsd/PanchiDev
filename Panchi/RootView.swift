@@ -28,8 +28,47 @@ struct RootView: View {
       OnboardingContainerView(isOnboarding: $isOnboarding)
     }
 
+//    HStack{
+//
+//      Spacer()
+//      Button {
+//      } label: {
+//        Image(systemName: "message")
+//      }
+//Spacer()
+//      Button {
+//      } label: {
+//        Image(systemName: "person")
+//      }
+//Spacer()
+//      Button {
+//      } label: {
+//        Image(systemName: "house")
+//      }
+//      Spacer()
+//    }
+
+    TabView {
+
+      NewUsersView()
+        .tabItem {
+          Image(systemName: "person")
+        }
+
+      ProfileView()
+        .tabItem {
+          Image(systemName: "house")
+        }
+
+      ChatView()
+        .tabItem {
+          Image(systemName: "message")
+        }
+    }
   }
-}
+
+  }
+
 
   struct RootView_Previews: PreviewProvider {
     static var previews: some View {
