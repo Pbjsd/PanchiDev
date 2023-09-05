@@ -15,9 +15,11 @@ struct RootView: View {
 
     VStack {
 
-      Text("Hello, Panchi!")
-        .padding()
-        .font(Font.chatHeading)
+//      Text("Hello, Panchi!")
+//        .padding()
+//        .font(Font.chatHeading)
+
+   //   Image(systemName: <#T##String#>)
 
       Spacer()
     }
@@ -28,31 +30,16 @@ struct RootView: View {
       OnboardingContainerView(isOnboarding: $isOnboarding)
     }
 
-//    HStack{
-//
-//      Spacer()
-//      Button {
-//      } label: {
-//        Image(systemName: "message")
-//      }
-//Spacer()
-//      Button {
-//      } label: {
-//        Image(systemName: "person")
-//      }
-//Spacer()
-//      Button {
-//      } label: {
-//        Image(systemName: "house")
-//      }
-//      Spacer()
-//    }
-
     TabView {
 
       NewUsersView()
         .tabItem {
-          Image(systemName: "person")
+          Image(systemName: "dog.fill")
+        }
+
+      ChatView()
+        .tabItem {
+          Image(systemName: "message")
         }
 
       ProfileView()
@@ -60,10 +47,6 @@ struct RootView: View {
           Image(systemName: "house")
         }
 
-      ChatView()
-        .tabItem {
-          Image(systemName: "message")
-        }
     }
   }
 
