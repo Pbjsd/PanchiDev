@@ -19,9 +19,9 @@ struct RootView: View {
 //        .padding()
 //        .font(Font.chatHeading)
 
-   //   Image(systemName: <#T##String#>)
+   //   Image(systemName: "bird.fill")
 
-      Spacer()
+    //  Spacer()
     }
     .fullScreenCover(isPresented: $isOnboarding) {
       // On dismiss

@@ -11,16 +11,16 @@ struct ProfileView: View {
 
     var body: some View {
 
-      VStack {
-        HStack {
-          
-          Button {
-          } label: {
-            Image(systemName: "gearshape")
-          }
+      ZStack(alignment: .topTrailing) {
+        Color.white.edgesIgnoringSafeArea(.all)
+
+        Button {
+        } label: {
+          Image(systemName: "gearshape")
+            .frame(width: 40, height: 40)
         }
+   
       }
-      //  Text("Hello, ProfileView!")
     }
 }
 
