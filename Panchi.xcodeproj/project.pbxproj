@@ -44,6 +44,8 @@
 		5A7F33792AA7953600019758 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5A7F33782AA7953600019758 /* FirebaseRemoteConfigSwift */; };
 		5A7F337B2AA7953600019758 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 5A7F337A2AA7953600019758 /* FirebaseStorage */; };
 		5A7F337D2AA7953600019758 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 5A7F337C2AA7953600019758 /* FirebaseStorageCombine-Community */; };
+		5A7F33912AAF8D5D00019758 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7F33902AAF8D5D00019758 /* CustomTabBar.swift */; };
+		5A7F33932AAF8DAF00019758 /* TabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7F33922AAF8DAF00019758 /* TabBarButton.swift */; };
 		5ACDDCC22A4C982500415F04 /* CreateProfileTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACDDCC12A4C982500415F04 /* CreateProfileTextFieldStyle.swift */; };
 		5ACDDCC72A5EFE9700415F04 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACDDCC62A5EFE9700415F04 /* User.swift */; };
 		5ACDDCCA2A5F2A2000415F04 /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACDDCC92A5F2A2000415F04 /* DatabaseService.swift */; };
@@ -79,6 +81,8 @@
 		5A73C7402AA2302D0046B9CF /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		5A73C7422AA230400046B9CF /* NewUsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUsersView.swift; sourceTree = "<group>"; };
 		5A73C7442AA2304C0046B9CF /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		5A7F33902AAF8D5D00019758 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		5A7F33922AAF8DAF00019758 /* TabBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarButton.swift; sourceTree = "<group>"; };
 		5ACDDCC12A4C982500415F04 /* CreateProfileTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileTextFieldStyle.swift; sourceTree = "<group>"; };
 		5ACDDCC62A5EFE9700415F04 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		5ACDDCC92A5F2A2000415F04 /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
@@ -158,10 +162,24 @@
 			path = Onboarding;
 			sourceTree = "<group>";
 		};
+		5A7F338F2AAF8D4300019758 /* Custom Tab Bar */ = {
+			isa = PBXGroup;
+			children = (
+				5A7F33902AAF8D5D00019758 /* CustomTabBar.swift */,
+				5A7F33922AAF8DAF00019758 /* TabBarButton.swift */,
+			);
+			path = "Custom Tab Bar";
+			sourceTree = "<group>";
+		};
 		5ACDDCC32A5EF85800415F04 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5AE7AD272A1E746A00996824 /* RootView.swift */,
 				5A62BA732A22BE7F00D196AD /* Onboarding */,
+				5A73C7422AA230400046B9CF /* NewUsersView.swift */,
+				5A73C7402AA2302D0046B9CF /* ChatView.swift */,
+				5A73C7442AA2304C0046B9CF /* ProfileView.swift */,
+				5A7F338F2AAF8D4300019758 /* Custom Tab Bar */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -201,19 +219,15 @@
 		5AE7AD242A1E746A00996824 /* Panchi */ = {
 			isa = PBXGroup;
 			children = (
-				5ACDDCC82A5F29FF00415F04 /* Services */,
-				5ACDDCC52A5EFE6D00415F04 /* Models */,
 				5AE7AD662A1FD37B00996824 /* Panchi.entitlements */,
 				5A6F52172AA791A400456AC7 /* GoogleService-Info.plist */,
 				5AE7AD672A1FDCE800996824 /* Info.plist */,
-				5AE7AD252A1E746A00996824 /* PanchiApp.swift */,
 				5AE7AD412A1E8E6C00996824 /* AppDelegate.swift */,
-				5AE7AD272A1E746A00996824 /* RootView.swift */,
-				5A73C7402AA2302D0046B9CF /* ChatView.swift */,
-				5A73C7422AA230400046B9CF /* NewUsersView.swift */,
-				5A73C7442AA2304C0046B9CF /* ProfileView.swift */,
+				5AE7AD252A1E746A00996824 /* PanchiApp.swift */,
 				5ACDDCC32A5EF85800415F04 /* Views */,
 				5AE7AD6A2A1FF7AD00996824 /* ViewModels */,
+				5ACDDCC52A5EFE6D00415F04 /* Models */,
+				5ACDDCC82A5F29FF00415F04 /* Services */,
 				5AE7AD872A1FFF6A00996824 /* Helpers */,
 				5AE7AD6B2A1FF95D00996824 /* Fonts */,
 				5AE7AD292A1E746B00996824 /* Assets.xcassets */,
@@ -390,9 +404,11 @@
 				5A62BA772A22BED200D196AD /* OnboardingContainerView.swift in Sources */,
 				5ACDDCCA2A5F2A2000415F04 /* DatabaseService.swift in Sources */,
 				5AE8AD082A33891100DE5D1B /* OnboardingButtonStyle.swift in Sources */,
+				5A7F33932AAF8DAF00019758 /* TabBarButton.swift in Sources */,
 				5A62BA7D2A22BF8100D196AD /* VerificationView.swift in Sources */,
 				5A6708522A8E9E18001337F6 /* ProfileCompletionView.swift in Sources */,
 				5ACDDCC22A4C982500415F04 /* CreateProfileTextFieldStyle.swift in Sources */,
+				5A7F33912AAF8D5D00019758 /* CustomTabBar.swift in Sources */,
 				5ACDDCEB2A743B7000415F04 /* ImagePicker.swift in Sources */,
 				5A62BA7B2A22BF7400D196AD /* PhoneNumberView.swift in Sources */,
 				5A73C7452AA2304C0046B9CF /* ProfileView.swift in Sources */,

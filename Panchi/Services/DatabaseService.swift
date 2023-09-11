@@ -62,25 +62,25 @@ class DatabaseService {
       let fileRef = storageRef.child(path)
 
       let uploadTask = fileRef.putData(imageData!, metadata: nil) { meta, error in
+
         if error == nil && meta != nil
         {
-
+          // Set that image path to the profile
+          doc.setData(["photo": path], merge: true) { error in
+            if error == nil {
+              // Success, notify caller - if it's success, we'll call completion and we'll pass back true
+              completion(true)
+            }
+          }
         }
+        else {
 
+          // Upload wasn't successful, notify caller - otherwise, we'll pass back false
+          completion(false)
+        }
       }
 
-      // Set that image path to the profile
-      doc.setData(["photo": path], merge: true) { error in
-        if error == nil {
-          // Success, notify caller - if it's success, we'll call completion and we'll pass back true
-          completion(true)
-        }
-      }
-    }
-    else {
 
-      // Upload wasn't successful, notify caller - otherwise, we'll pass back false
-      completion(false)
     }
   }
 
