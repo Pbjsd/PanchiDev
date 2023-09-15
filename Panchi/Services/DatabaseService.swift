@@ -42,7 +42,6 @@ class DatabaseService {
                  "lastname": lastName,
                  "phone": userPhone])
 
-// testing note only - ignore this note 
     // Check if an image is passed through
     if let image = image {
 

@@ -26,7 +26,7 @@ struct RootView: View {
         case .newusers:
           NewUsersView()
         case .chats:
-          ConversationView()
+          ChatListView()
         case .yourprofile:
           ProfileView()
         }

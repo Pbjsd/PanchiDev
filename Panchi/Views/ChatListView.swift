@@ -1,5 +1,5 @@
 //
-//  ConversationView.swift
+//  ChatListView.swift
 //  Panchi
 //
 //  Created by Panchi on 9/1/23.
@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct ConversationView: View {
+struct ChatListView: View {
     var body: some View {
         Text("Hello, ChatView!")
     }
 }
 
-struct ConversationView_Previews: PreviewProvider {
+struct ChatListView_Previews: PreviewProvider {
     static var previews: some View {
-        ConversationView()
+        ChatListView()
     }
 }
