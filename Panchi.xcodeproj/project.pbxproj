@@ -17,6 +17,7 @@
 		5A73C7412AA2302D0046B9CF /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A73C7402AA2302D0046B9CF /* ChatView.swift */; };
 		5A73C7432AA230400046B9CF /* NewUsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A73C7422AA230400046B9CF /* NewUsersView.swift */; };
 		5A73C7452AA2304C0046B9CF /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A73C7442AA2304C0046B9CF /* ProfileView.swift */; };
+		5A74004D2AB4C8420051F060 /* testing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A74004C2AB4C8420051F060 /* testing.swift */; };
 		5A7F33492AA7953600019758 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 5A7F33482AA7953600019758 /* FirebaseAnalytics */; };
 		5A7F334B2AA7953600019758 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 5A7F334A2AA7953600019758 /* FirebaseAnalyticsOnDeviceConversion */; };
 		5A7F334D2AA7953600019758 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5A7F334C2AA7953600019758 /* FirebaseAnalyticsSwift */; };
@@ -81,6 +82,7 @@
 		5A73C7402AA2302D0046B9CF /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		5A73C7422AA230400046B9CF /* NewUsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUsersView.swift; sourceTree = "<group>"; };
 		5A73C7442AA2304C0046B9CF /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		5A74004C2AB4C8420051F060 /* testing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testing.swift; sourceTree = "<group>"; };
 		5A7F33902AAF8D5D00019758 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		5A7F33922AAF8DAF00019758 /* TabBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarButton.swift; sourceTree = "<group>"; };
 		5ACDDCC12A4C982500415F04 /* CreateProfileTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileTextFieldStyle.swift; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				5ACDDCC92A5F2A2000415F04 /* DatabaseService.swift */,
+				5A74004C2AB4C8420051F060 /* testing.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -406,6 +409,7 @@
 				5AE8AD082A33891100DE5D1B /* OnboardingButtonStyle.swift in Sources */,
 				5A7F33932AAF8DAF00019758 /* TabBarButton.swift in Sources */,
 				5A62BA7D2A22BF8100D196AD /* VerificationView.swift in Sources */,
+				5A74004D2AB4C8420051F060 /* testing.swift in Sources */,
 				5A6708522A8E9E18001337F6 /* ProfileCompletionView.swift in Sources */,
 				5ACDDCC22A4C982500415F04 /* CreateProfileTextFieldStyle.swift in Sources */,
 				5A7F33912AAF8D5D00019758 /* CustomTabBar.swift in Sources */,
