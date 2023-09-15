@@ -83,6 +83,8 @@ struct CreateProfileView: View {
 //testing note only - ignore this note 
         // TODO: Check that firstname/lastname fields are filled before allowing to save 
 
+        // TODO: Check that firstname/lastname fields are filled before allowing to save 
+
         // Prevent double taps
         isSaveButtonDisabled = true
 
